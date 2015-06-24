@@ -30,7 +30,8 @@
     <description>Recaptcha JSF Components Library</description>
 
     <properties>
-        <shortname>mycomponents</shortname>
+    	<component.uri>http://fazenda.mg.gov.br</component.uri>
+        <shortname>recaptcha</shortname>
     </properties>
 
     <dependencies>
@@ -178,7 +179,7 @@
                             <templateFile>facelets-taglib20.vm</templateFile>
                             <params>
                                  <shortname>${shortname}</shortname>
-                                 <uri>http://www.myorganitzation.org/${shortname}</uri>
+                                 <uri>${component.uri}/${shortname}</uri>
                             </params>
                         </configuration>
                         <goals>

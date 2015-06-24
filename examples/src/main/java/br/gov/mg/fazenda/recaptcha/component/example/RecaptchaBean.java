@@ -18,18 +18,22 @@
  */
 package br.gov.mg.fazenda.recaptcha.component.example;
 
+import java.io.Serializable;
+
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 import javax.faces.event.ActionEvent;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.myorganization.converter.PhoneNumber;
 
 /**
  * Managed bean for the recaptcha page example
  */
-public class RecaptchaBean
+
+@RequestScoped
+@SuppressWarnings("serial")
+public class RecaptchaBean implements Serializable
 {
 
     private static final Log log = LogFactory.getLog(RecaptchaBean.class);
